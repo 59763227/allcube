@@ -5,4 +5,4 @@
  * @author gavin
  *
  */
-package com.gl.allcube.cube;
+package com.gl.allcube.cube.test.mongo;
