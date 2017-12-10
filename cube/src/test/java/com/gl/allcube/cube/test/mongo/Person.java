@@ -7,6 +7,9 @@ public class Person {
     private String name;
     private int age;
     private Address address;
+    
+    private String personId;
+    
 	public ObjectId getId() {
 		return id;
 	}
@@ -30,6 +33,17 @@ public class Person {
 	}
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+	public String getPersonId() {
+		return personId;
+	}
+	public void setPersonId(String personId) {
+		this.personId = personId;
+	}
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", personId="
+				+ personId + "]";
 	}
     
     

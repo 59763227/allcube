@@ -24,7 +24,7 @@ import com.mongodb.client.MongoDatabase;
 
 public class MongoTests {
 	
-	static String HOST = "192.168.0.104";
+	static String HOST = "192.168.0.107";
 	static int PORT = 9700;
 	static String DB = "test";
 	
@@ -117,6 +117,8 @@ public class MongoTests {
 		
 		MongoDatabase database = mongoClient.getDatabase("testdb");
 		MongoCollection<Person> collection = database.getCollection("batch.Persons", Person.class);
+		
+		collection.drop();
 		
 		List<Person> persons = new ArrayList<Person>();
 		for(int i = 0; i < MAX_SIZE; i++){
