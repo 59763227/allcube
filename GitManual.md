@@ -8,3 +8,7 @@ git branch -r
 
 
 git push --set-upstream origin dev
+
+分支、远程分支、upstream
+git branch -va
+git branch -vv
