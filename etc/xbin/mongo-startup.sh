@@ -2,7 +2,7 @@
 MONGODB_PATH=/opt/mongo/mongo-3.4.10/mongodb/bin
 MONGOD_EXEC=$MONGODB_PATH/mongod
 
-MONGODB_CONFIG=./mongodb.conf
+MONGODB_CONFIG=./mongodb-9700.conf
 
 
 
