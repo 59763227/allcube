@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import com.gl.allcube.cube.common.util.ReflectionUtil;
 
-public abstract class DTO implements Serializable{
+public abstract class Dto implements Serializable{
 
     
 

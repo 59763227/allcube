@@ -5,11 +5,11 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.gl.allcube.cube.common.dto.DTO;
+import com.gl.allcube.cube.common.dto.Dto;
 import com.gl.allcube.cube.common.util.ReflectionUtil;
 
 public class ReflectionUtilTest {
-    public static class TradeRequest extends DTO{
+    public static class TradeRequest extends Dto{
 
         /**
          * 

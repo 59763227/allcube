@@ -1,8 +1,8 @@
 package com.gl.allcube.cube.test.proxy;
 
-import com.gl.allcube.cube.common.dto.DTO;
+import com.gl.allcube.cube.common.dto.Dto;
 
-public class SimpleUser extends DTO{
+public class SimpleUser extends Dto{
 	/**
 	 * 
 	 */
