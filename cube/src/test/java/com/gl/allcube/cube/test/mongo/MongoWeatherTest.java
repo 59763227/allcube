@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+import java.util.UUID;
 
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.configuration.CodecRegistries;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
+import org.bson.types.ObjectId;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -82,7 +84,7 @@ public class MongoWeatherTest {
 
 	private Weather buildWeather() {
 		Weather w = new Weather();
-//		w.setId(new ObjectId(UUID.randomUUID().toString()));
+		w.setId(new ObjectId(UUID.randomUUID().toString().getBytes()));
 //		w.set_id(UUID.randomUUID().toString());
 		w.setCity("SZ");
 		w.setRecordDate(new Date());
