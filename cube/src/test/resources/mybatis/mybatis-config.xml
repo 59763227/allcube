@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <properties resource="mybatis/db.properties">
+  </properties>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="com/gl/allcube/cube/test/mybatis/dao/UserDao.xml"/>
+  </mappers>
+</configuration>
+
+<!-- 
+properties(属性)
+settings(全局配置参数)
+typeAiases(类型别名)
+typeHandlers(类型处理器)
+objectFactory(对象工厂)
+plugins(插件)
+environments(环境集合属性对象)mappers(映射器)
+environment(环境子属性对象)
+transactionManager(事物管理)
+datesource(数据源
+mappers(映射器)
+ -->

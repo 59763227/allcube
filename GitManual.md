@@ -21,3 +21,6 @@ git remote show origin
 git commit -a -m "my first commit"
 
 使用git push [remote-name] [branch-name]将本机的工作成果推送到远程仓库
+git branch -vv
+
+git remote add upstream https://github.com/user1/repository.git
